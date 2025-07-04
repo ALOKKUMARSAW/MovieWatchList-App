@@ -92,4 +92,11 @@ public class MovieController {
 		
 		
 	}
+	@GetMapping("/deleteMovie")
+	public ModelAndView deleteMovie(@RequestParam Integer id) {
+		databaseService.deleteMovieById(id);
+		RedirectView rd = new RedirectView();
+		rd.setUrl("/watchlist");
+		return new ModelAndView(rd);
+	}
 }

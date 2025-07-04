@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.example.AlokWatchlist.entity.Movie;
 
 @Repository
+
 public interface MovieRepo extends JpaRepository<Movie, Integer>{
+
 
 }
