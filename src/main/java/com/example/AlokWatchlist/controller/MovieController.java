@@ -7,19 +7,19 @@ import java.util.Map;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
 import com.example.AlokWatchlist.entity.Movie;
 import com.example.AlokWatchlist.service.DatabaseService;
 
-@RestController
+@Controller
 public class MovieController {
 	
 	@Autowired
@@ -98,5 +98,10 @@ public class MovieController {
 		RedirectView rd = new RedirectView();
 		rd.setUrl("/watchlist");
 		return new ModelAndView(rd);
+	}
+
+	@GetMapping({"/", "/home"})
+	public ModelAndView home() {
+		return new ModelAndView("home");
 	}
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist App - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(120deg, #6c757d 0%, #495057 100%);
+            padding: 60px 0 80px 0;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .welcome-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(60,60,60,0.15);
+            padding: 48px 36px 36px 36px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .welcome-card h1 {
+            font-size: 2.7rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+            color: #343a40;
+        }
+        .welcome-card p {
+            font-size: 1.25rem;
+            color: #495057;
+            margin-bottom: 32px;
+        }
+        .cta-btn {
+            font-size: 1.1rem;
+            padding: 12px 32px;
+            border-radius: 25px;
+            font-weight: 600;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            transition: background 0.2s;
+        }
+        .cta-btn:hover {
+            background: #0056b3;
+            color: #fff;
+        }
+        .navbar {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6c757d;">
+    <a class="navbar-brand font-weight-bold" href="/home">Watchlist App</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/watchlist">Watchlist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/watchlistItemForm">Submit an item</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="hero-section">
+    <div class="welcome-card">
+        <h1>Welcome to the Watchlist application!</h1>
+        <p>Made for movie lovers who have a hard time choosing their next movie to watch.</p>
+        <a href="/watchlist" class="cta-btn">View Watchlist</a>
+    </div>
+</div>
+</body>
+</html> 
