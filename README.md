@@ -18,6 +18,17 @@ The MovieWatchList-App is a Java Spring Boot project that provides a platform fo
 
 - **OMDb API Integration**: The application integrates with the [OMDb API](https://www.omdbapi.com/) to fetch detailed movie information, including ratings, plot summaries, and more. This allows users to compare their ratings with those on the OMDb website and update their watchlist accordingly.
 
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+![image alt]()
+
+### 🎬 Watchlist Page
+![Watchlist Page](assets/watchlist.png)
+
+### ➕ Submit a Movie
+![Submit a Movie](assets/submit.png)
 ## Installation
 
 1. **Clone the Repository**:
