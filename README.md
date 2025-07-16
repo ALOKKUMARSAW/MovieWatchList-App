@@ -28,7 +28,7 @@ The MovieWatchList-App is a Java Spring Boot project that provides a platform fo
 ![image alt](https://github.com/ALOKKUMARSAW/MovieWatchList-App/blob/a27029d71ac4a6cc31b827922230b9b8bcbed843/Screenshot%202025-07-16%20194132.png)
 
 ### ➕ Submit a Movie
-![Submit a Movie](assets/submit.png)
+![image alt](https://github.com/ALOKKUMARSAW/MovieWatchList-App/blob/1098cd3488cc8a64ced2cc55bbaf833eb54fc7b7/Screenshot%202025-07-16%20193353.png)
 ## Installation
 
 1. **Clone the Repository**:
