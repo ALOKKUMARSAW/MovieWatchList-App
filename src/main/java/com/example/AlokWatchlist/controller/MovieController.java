@@ -37,14 +37,6 @@ public class MovieController {
 		}else {
 			model.put("watchlistItem", databaseService.getMovieById(id));
 		}
-//		Movie dummyMovie = new Movie();
-//		dummyMovie.setTitle("dummy");
-//		dummyMovie.setRating(0);
-//		dummyMovie.setPriority(0);
-//		dummyMovie.setComment("john doe");
-		
-//		model.put("watchlistItem", dummyMovie);
-//		model.put("watchlistItem", new Movie());
 		
 		return new ModelAndView(viewName, model);
 	}
@@ -54,16 +46,9 @@ public class MovieController {
 		
 		if(bindingResult.hasErrors()) {
 			System.out.println(bindingResult.hasErrors());
-			// if errors are there, redisplay the form and let user enter again"
+		
 			return new ModelAndView("watchlistItemForm");
 		
-		/* 
-		 if(id == null) {
-		 create new movie
-		 } else {
-		 Update
-		 }
-		 */
 		
      }
 
